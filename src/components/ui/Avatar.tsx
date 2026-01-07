@@ -1,7 +1,5 @@
 'use client';
 
-'use client';
-
 import Image from 'next/image';
 import { cn } from '@/utils/cn';
 import { useState } from 'react';
@@ -20,12 +18,13 @@ const Avatar = ({ src, alt = 'Avatar', fallback, className, size = 32 }: AvatarP
   return (
     <div className={cn('relative flex shrink-0 overflow-hidden rounded-full', className)}>
       {src && !imageError ? (
-        <Image
+        <video
           src={src}
-          alt={alt}
-          data-slot="avatar-image"
-          fill
-          className="object-cover"
+          data-slot="avatar-video"
+          className="size-full object-cover"
+          autoPlay
+          muted
+          playsInline
           onError={() => setImageError(true)}
         />
       ) : (

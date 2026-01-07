@@ -34,11 +34,15 @@ const PostCard = ({ post }: PostCardProps) => {
             <time className="shrink-0 text-sm text-muted-foreground">{post.date}</time>
           </div>
         </div>
-        {post.image && (
-          <div className="relative h-24 w-36 shrink-0 overflow-hidden rounded-2xl">
-            <Image src={post.image} alt={post.title} fill className="object-cover" />
-          </div>
-        )}
+
+        <div className="relative hidden shrink-0 overflow-hidden rounded-2xl sm:block sm:h-24 sm:w-36">
+          <Image
+            src={post.image}
+            alt={post.title}
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-110"
+          />
+        </div>
       </div>
     </Link>
   );

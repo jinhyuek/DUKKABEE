@@ -12,36 +12,27 @@ const Header = () => {
     <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl font-semibold">dukkabee.dev</span>
+          <span className="text-2xl font-semibold">dukkabee</span>
+          <span className="size-1.5 rounded-full bg-primary" />
         </Link>
 
-        <nav className="hidden flex-1 items-center gap-6 pl-10 text-[0.85rem] md:flex">
+        <nav className="mt-1 hidden flex-1 items-start gap-6 pl-12 md:flex">
           <Link
             href="/posts"
-            className="font-medium text-muted-foreground transition-colors hover:text-primary"
+            className="font-semibold text-muted-foreground transition-colors hover:text-primary"
           >
             Posts
           </Link>
           <Link
             href="/"
-            className="font-medium text-muted-foreground transition-colors hover:text-primary"
-          >
-            Playground
-          </Link>
-          <Link
-            href="/"
-            className="font-medium text-muted-foreground transition-colors hover:text-primary"
+            className="font-semibold text-muted-foreground transition-colors hover:text-primary"
           >
             Guestbook
           </Link>
-          <Link
-            href="/"
-            className="font-medium text-muted-foreground transition-colors hover:text-primary"
+          {/* <Link
+            href="/links"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
           >
-            Newsletter
-          </Link>
-
-          {/* <Link href="/links" className="text-sm font-medium transition-colors hover:text-primary">
             About
           </Link> */}
         </nav>

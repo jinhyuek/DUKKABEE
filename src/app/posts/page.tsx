@@ -11,7 +11,7 @@ const PostsPage = () => {
         <p className="text-muted-foreground">노트 · 빌드 · TIL</p>
       </div>
 
-      <div className="mb-8 grid gap-12">
+      <div className="mb-8 grid gap-16">
         {MOCK_POSTS.map((post) => (
           <PostCard key={post.slug} post={post} />
         ))}

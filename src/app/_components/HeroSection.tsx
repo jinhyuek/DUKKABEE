@@ -25,7 +25,7 @@ const HeroSection = () => {
     <section className="container py-24 md:py-32">
       <div className="flex flex-col items-center gap-8 text-center">
         <Avatar
-          src="/cute-toad-mascot-olive-green.jpg"
+          src="/toad-video.mp4"
           fallback="🐸"
           alt="dukkabee-avatar"
           className="size-24 ring-2 ring-primary ring-offset-4 ring-offset-background md:size-32"
